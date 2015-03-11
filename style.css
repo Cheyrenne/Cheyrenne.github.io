@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "timeburner_regular";
+  src: url('fonts/timeburner_regular.ttf');
+}
+
+html, body, h1, h2, h3,
+p, ol, ul, li, a, div, section, nav, a {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cf:before,
+.cf:after {
+content: "";
+display: table;
+}
+.cf:after {
+clear: both;
+}
+.cf {
+zoom: 1; /* IE6&7 */
+}
+
+.effect1{
+	-webkit-box-shadow: 0 10px 6px -6px #000;
+	   -moz-box-shadow: 0 10px 6px -6px #000;
+	        box-shadow: 0 10px 26px -6px #000;
+}
+
+html, body {
+  position: relative;
+  font-size: 10px;
+}
+html {
+  height: 100%;
+}
+body {
+  font-size: 100%; /* 1em = 10px */
+  font-family: sans-serif;
+  padding: 0 5%;
+ 
+   background: rgb(181,189,200); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+#container {
+  position: relative;
+  margin: 5% auto;
+  font-size: 2em;
+  max-width: 950px;
+  min-height: 300px;
+  border-top: 50px solid teal;
+  border-bottom: 50px solid teal;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
+  background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+header {
+  border-top: 10px solid;
+}
+
+#title  {
+  color: #443266;
+  font-size: 2em;
+  font-weight: normal;
+  margin: .5em 2em 2em 2em;
+  border-bottom: 10px solid;
+}
+#title #name {
+  text-align: center;
+  margin-top: 1em;
+}
+h1 {
+  font-family: "timeburner_regular", sans-serif;
+  font-weight: normal;
+}
+#subtitle {
+  font-size: .75em;
+  font-family: "Fauna One";
+  font-style: italic;
+  text-align: center;
+  opacity: .7;
+  margin-bottom: 2em;
+}
+#name span {
+  font-weight: bold;
+  color: teal;
+  text-transform: uppercase;
+}
+#title #span1 {
+  position: absolute;
+  opacity: .5;
+  font-size:1.5em;
+} 
+
+/* Nav links */
+nav {
+  margin: 1.5em 0;
+  width: 100%;
+  text-align: center;
+}
+
+nav li  {
+  position: relative;
+  display: inline-block;
+  padding: .5em;
+}
+
+nav a {
+  border: 3px solid #8c489f;
+  border-radius: 1em;
+  color: #8C489F;
+  font-weight: bold;
+  margin: 0em 0em 0 1em;
+  padding: 0.5em;
+  transition: all 400ms;
+  font-family: "timeburner_regular";
+}
+nav a:hover {
+  background-color: #8C489F;
+  color: white;
+}
+
+.content header {
+  font-family: "Fauna One", serif;
+  color: #8C489F;
+  margin: 0.5em 0;
+  border-width: 5px;
+}
+
+section.content {
+  position: relative;
+  margin: 2em 0;
+  padding: 0 80px;
+  display: none;
+}
+section.content ul {
+  margin-left: 25px;
+}
+section.content p {
+  font-family: "Quattrocento";
+  line-height: 1.5;
+  margin: 0.5em 0;
+}
+section.content a {
+  text-decoration: underline;
+}
+
+section.content li {
+  list-style-type: disc;
+}
